@@ -14,19 +14,9 @@ use Inertia\Inertia;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-//Route::get('/', function () {
-//   return Inertia::render('Index', [
-//       'foo' => 'bar',]);
-//});
-
 Route::get('/', 'ScoreController@index')->name('home');
 
 Route::post('/score', 'ScoreController@score')->name('score');
 
 Route::get('/score', 'ScoreController@score')->name('score');
 
-//Route::get('/result', 'ScoreController@displayResult')->name('result');
