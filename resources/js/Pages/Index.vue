@@ -3,14 +3,13 @@
 
         <h2 class="mb-3 mt-3">Tennis Match Scores</h2>
 
-        <div v-if="result" class="col-6 alert alert-success mt-4">
-            Match Results: {{ result }}
-        </div>
-
+        <!-- Display Error -->
         <div v-if="Object.keys(errors).length > 0" class="alert alert-danger mt-4">
             Please Input proper scores.
         </div>
+        <!--\End Display Error -->
 
+        <!-- Capture Match Scores -->
         <form action="/score" method="POST" @submit.prevent="scoreMatch">
             <div class="row g-3">
                 <div class="col">
@@ -25,6 +24,7 @@
                 </div>
             </div>
         </form>
+        <!--\ End Capture Match Scores -->
 
     </div>
 

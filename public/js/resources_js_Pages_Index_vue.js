@@ -149,12 +149,6 @@ var render = function () {
   return _c("div", { staticClass: "container" }, [
     _c("h2", { staticClass: "mb-3 mt-3" }, [_vm._v("Tennis Match Scores")]),
     _vm._v(" "),
-    _vm.result
-      ? _c("div", { staticClass: "col-6 alert alert-success mt-4" }, [
-          _vm._v("\n        Match Results: " + _vm._s(_vm.result) + "\n    "),
-        ])
-      : _vm._e(),
-    _vm._v(" "),
     Object.keys(_vm.errors).length > 0
       ? _c("div", { staticClass: "alert alert-danger mt-4" }, [
           _vm._v("\n        Please Input proper scores.\n    "),
