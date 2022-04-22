@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        
+
         <h2 class="mb-3 mt-3">Tennis Match Scores</h2>
 
         <div v-if="result" class="col-6 alert alert-success mt-4">
