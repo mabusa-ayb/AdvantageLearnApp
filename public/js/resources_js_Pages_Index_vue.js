@@ -150,7 +150,7 @@ var render = function () {
     _c("h2", { staticClass: "mb-3 mt-3" }, [_vm._v("Tennis Match Scores")]),
     _vm._v(" "),
     Object.keys(_vm.errors).length > 0
-      ? _c("div", { staticClass: "alert alert-danger mt-4" }, [
+      ? _c("div", { staticClass: "col-6 alert alert-danger mt-4" }, [
           _vm._v("\n        Please Input proper scores.\n    "),
         ])
       : _vm._e(),

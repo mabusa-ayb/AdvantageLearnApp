@@ -4,7 +4,7 @@
         <h2 class="mb-3 mt-3">Tennis Match Scores</h2>
 
         <!-- Display Error -->
-        <div v-if="Object.keys(errors).length > 0" class="alert alert-danger mt-4">
+        <div v-if="Object.keys(errors).length > 0" class="col-6 alert alert-danger mt-4">
             Please Input proper scores.
         </div>
         <!--\End Display Error -->
