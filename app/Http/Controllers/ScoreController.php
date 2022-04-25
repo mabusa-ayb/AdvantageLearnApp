@@ -50,6 +50,10 @@ class ScoreController extends Controller
                 $result = $one.' : '.$two;
             }
 
+            //direct view to the Result display page
+            return Inertia::render('Result', [
+                'result' => $result,
+            ]);
         }
 
         //Condition if both players score more than or equal 3
@@ -80,6 +84,10 @@ class ScoreController extends Controller
                 $result = 'Player Two Wins';
             }
 
+            //direct view to the Result display page
+            return Inertia::render('Result', [
+                'result' => $result,
+            ]);
         }else{
 
             //Instances where difference in scores is above 2 points, regardless of whether score is above or below 3
@@ -90,10 +98,12 @@ class ScoreController extends Controller
                 $result = 'Player Two Wins';
             }
 
+            //direct view to the Result display page
+            return Inertia::render('Result', [
+                'result' => $result,
+            ]);
         }
-        return Inertia::render('Result', [
-            'result' => $result,
-        ]);
+
     }
 
 }
