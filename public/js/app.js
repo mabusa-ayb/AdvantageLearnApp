@@ -2234,6 +2234,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
 
 
+
 (0,_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.createInertiaApp)({
   resolve: function resolve(name) {
     return __webpack_require__("./resources/js/Pages lazy recursive ^\\.\\/.*$")("./".concat(name));
@@ -2244,6 +2245,7 @@ __webpack_require__.r(__webpack_exports__);
         props = _ref.props,
         plugin = _ref.plugin;
     vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(plugin);
+    vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('inertia-link', _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.Link);
     new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
       render: function render(h) {
         return h(App, props);

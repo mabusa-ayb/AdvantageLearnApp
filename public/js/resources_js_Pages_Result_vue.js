@@ -118,19 +118,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("h2", { staticClass: "mb-3 mt-3" }, [_vm._v("Tennis Match Result")]),
-    _vm._v(" "),
-    _c("a", { staticClass: "nav-item nav-link", attrs: { href: "/" } }, [
-      _vm._v("< Back"),
-    ]),
-    _vm._v(" "),
-    _vm.result
-      ? _c("div", { staticClass: "col-6 alert alert-success mt-4" }, [
-          _c("strong", [_vm._v(_vm._s(_vm.result))]),
-        ])
-      : _vm._e(),
-  ])
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [
+      _c("h2", { staticClass: "mb-3 mt-3" }, [_vm._v("Tennis Match Result")]),
+      _vm._v(" "),
+      _c("inertia-link", { attrs: { href: "/" } }, [
+        _vm._v("Enter New Scores"),
+      ]),
+      _vm._v(" "),
+      _vm.result
+        ? _c("div", { staticClass: "col-6 alert alert-success mt-4" }, [
+            _c("strong", [_vm._v(_vm._s(_vm.result))]),
+          ])
+        : _vm._e(),
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
